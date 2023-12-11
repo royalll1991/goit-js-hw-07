@@ -16,6 +16,7 @@ function getRandomHexColor() {
     const amount = Number(input.value);
 
     if (amount >= 1 && amount <= 100) {
+      destroyBoxes();
       createBoxes(amount);
       input.value = '';
     } else {
